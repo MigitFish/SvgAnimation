@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="SvgAnimation.css">
+  </head>
+  <body>
+
+
+    <svg width="80%" viewbox="0 0 600 400">
+      <image x="0" y="0" width="600" height="400" xlink:href="https://i.ytimg.com/vi/DL1Gv4nCtkI/maxresdefault.jpg"/>
+
+      <image x="45" y="150" width="125" height="125" xlink:href="http://www.cs.toronto.edu/~ylzhang/csc309w16/t6/pacman.gif">
+      <animate id="hereToThere" attributeName="x" from="45" to="475" dur="10s" fill="freeze" begin="mouseover"/></image>
+
+      <image x="475" y="150" width="125" height="125" xlink:href="http://vignette3.wikia.nocookie.net/pacman/images/8/8a/Vulnerableghostbig.png/revision/latest?cb=20090919171743">
+      <animate attributeName="opacity" from="1" to="0" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="1" to="0" dur="1s"  begin="hereToThere.end" fill="freeze" /></image>
+    </svg>
+
+
+  </body>
+</html>
